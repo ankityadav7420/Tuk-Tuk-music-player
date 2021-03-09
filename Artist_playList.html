@@ -1,0 +1,920 @@
+<!-- Play List Screen part Music Player -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Playlist
+        </title>
+         <!-- meta tag for responsiveness -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- stylesheet linking -->
+         <!-- font awesome icons -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+<!-- Adding css files -->
+          <link rel="stylesheet" type="text/css" href="css\Tuk_Tuk_player.css">
+          <link rel="stylesheet" type="text/css" href="css\Tuk_Tuk_player1.css">
+           <!-- Adding icon logo to the  title -->
+       <link rel="icon" href="static\header\ankit.jpeg" type="image/icon type"> 
+    </head>
+    <body>
+        <!-- top header -->
+        <header>
+            <div class="site-logo-container">
+                <!--  logo image -->
+                <div class="circular-image-header">
+                    <img src="static/header/tuk_tuk_logo.jpg" alt="logo">
+                </div>
+               
+                <div class="site-name">
+                    <p>Tuk Tuk<br><strong>player</strong></p>
+                </div>
+            </div>
+
+             <div class="release-artist-image">
+                <a target="_self" href="Tuk_Tuk_player_HOME.html"> 
+                    <p>HOME</p></a>
+                </div>
+
+            <div class="site-page-name">
+<!-- Adding Favourit section to add ore remove Favourits -->
+                <div class="song-icons-container">
+                                <div class="dropdown" >
+                                   <p style="font-size: 0.899rem;"><strong>Your favourite</strong></p>
+                                    <div class="dropdown-content" style="background-color: #cccccc;">
+                                        <p>
+                                           <a href=""> <span>Go To Favourits</span></a>
+                                        </p>
+                                        <p>
+                                            <a href=""> <span>Add To favourits</span></a>
+                                        </p>
+                                        <p>
+                                           <a href="">  <span>Remove from Favourits</span></a>
+                                        </p> 
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- Adding more language to the player -->
+                   <div class="song-icons-container">
+                                <div class="dropdown">
+                                   <p style="font-size: 0.88rem;"><strong>Song Language</strong></p>
+                                    <div class="dropdown-content" style="background-color: #cccccc;">
+                                        <p>
+                                           <a href=""> <span>Hindi</span></a>
+                                        </p>
+                                        <p>
+                                            <a href=""> <span>Bhojpuri</span></a>
+                                        </p>
+                                        <p>
+                                           <a href="">  <span>English</span></a>
+                                        </p>
+                                        <p>
+                                           <a href="">  <span> Haryanvi</span></a>
+                                        </p>
+                                         <p>
+                                           <a href="">  <span> Panjabi</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                               
+                           </div>
+            </div>
+            <!-- search bar for music -->
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <!-- search icon -->
+                   <a href=""><i class="fas fa-search"></i></a>
+                    <!-- search input -->
+                    <input type="text" id="header-search" placeholder="Search music">
+                    <!-- voice search icon -->
+                   <a href=""><i class="fas fa-microphone-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- profile and notifications -->
+            <div class="profile-container">
+                <div class="bell-icon">
+                    <!-- bell icon -->
+                    <i class="fas fa-bell"></i>
+                </div>
+                <!-- profile image -->
+                <div class="circular-image-header">
+                    <a href=""><img src="static\header\ankit.jpeg" alt="profile image"></a>
+                </div>
+            </div>
+
+            <!-- Adding Account section -->
+             <div class="dropdown">
+                 <p style="font-size: 0.88rem; margin-right: 2rem;"><strong>Account</strong></p>
+                  <div class="dropdown-content" style="background-color: #cccccc;"><p>
+                   <a href=""> <span>Profile</span></a></p>
+                   <p><a href=""> <span>Your Play lists</span></a></p>
+                   <p><a href="">  <span>Add New Account</span></a></p>
+                   <p><a href="">  <span> Seettings</span></a></p>
+                   <p><a href="">  <span> Logout</span></a></p>
+                </div>
+           </div>
+
+        </header>
+<!-- main and aside content for playlist -->
+        <div class="main-content">
+            <!-- main content -->
+            <main>
+                <section class="artist-details-container">
+                    <div class="artist-image">
+                        <a href=""><img src="static\Artist_image\Arijit_sing.jpeg" alt="artist image"></a>
+                    </div>
+<!-- Adding Artist detail -->
+                <div class="artist-details">
+                    <div class="artist-name-container">
+                            <div class="artist-name-nationality">
+                                <h2 id="artist-name">Soul Full Songs</h2>
+                                <p id="artist-nationality">Indian Band</p>
+                            </div>
+                            <div class="followers-container">
+                                <p id="artist-followers"><span><strong>10M</strong></span> Followers</p>
+                            </div>
+                        </div>
+
+                        <div class="artist-about-container">
+                            <span>
+                            
+                                He is a BestSoul Full singer of india. He struggle in his life and become the great singer of the era. Some more singer are Also there like jubin nautial ,Atif Aslam etc are also the best slulfull singer of india. They are best with guitar and voilin.
+                            </span> 
+                        </div>
+                        <!-- container for play button, track, albums and follow link-->
+                        <div class="tracks-playBtn-container">
+                            <div class="playBtn-tracks-details">
+                                <!--button for  play all songs-->
+                                <button><a href="">Play All</button></a>
+                                <!-- number of tracks and albums -->
+                                <div class="tracks-album-details">
+                                    <span id="tracks">434</span>
+                                    <span>Tracks |</span>
+                                    <span id="albums">128</span>
+                                    <span>Albums</span>
+                                </div>
+                            </div>
+                            <div class="follow-link">
+                                <a href=""><span>Follow</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<!--  song's of queue -->
+                <section class="song-queue">
+                    <ul class="song-list">
+                        <li>
+                            <!-- Adding songs 1 to queue -->
+                            <div class="song-details-container">
+                                <div class="song-image">
+                                   <a href=""><img src="static\Queue Songs\Q.jpeg" alt="song image"></a>
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox1" name="playPauseCheckbox" target=".playbar">
+                                            <label for="Checkbox1"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="singer-name">
+                                        <p>feel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adding icons heart and plus -->
+                            <div class="song-icons-container">
+                               <a href=""> <i class="far fa-heart"></i></a>
+                                <a href=""><i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <!-- song detail container -->
+                            <div class="song-details-container">
+                                <div class="song-image">
+                                    <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox2" name="playPauseCheckbox"  target=".playbar">
+                                            <label for="Checkbox2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="singer-name">
+                                        <p>feel</p>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Adding icons heart and plus -->
+                            <div class="song-icons-container">
+                                <a href=""> <i class="far fa-heart"></i></a>
+                                <a href=""><i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <!-- Adding song 2-->
+                            <div class="song-details-container">
+                                <div class="song-image">
+                                    <a href=""><img src="static\Queue Songs\Qimages.jpeg" alt="song image"></a>
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox3" name="playPauseCheckbox"  target=".playbar">
+                                            <label for="Checkbox3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="singer-name">
+                                        <p>feel</p>
+                                    </div>
+                                </div>
+                            </div>
+                                  <!-- Adding icons heart and plus -->
+                            <div class="song-icons-container">
+                                <a href=""> <i class="far fa-heart"></i></a>
+                                <a href=""><i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <!-- Adding song 3-->
+                            <div class="song-details-container">
+                                <div class="song-image">
+                                    <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox4" name="playPauseCheckbox"  target=".playbar">
+                                            <label for="Checkbox4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="singer-name">
+                                        <p>feel</p>
+                                    </div>
+                                </div>
+                            </div>
+                                   <!-- Adding icons heart and plus -->
+                            <div class="song-icons-container">
+                                <a href=""> <i class="far fa-heart"></i></a>
+                                <a href=""><i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <!-- Adding song 4-->
+                            <div class="song-details-container">
+                                <div class="song-image">
+                                    <a href=""><img src="static\Queue Songs\Q.jpeg" alt="song image"></a>
+                                    <div class="animate-content">
+                                        <div class="play-pause">
+                                            <input type="checkbox" value="" id="Checkbox5" name="playPauseCheckbox">
+                                            <label for="Checkbox5"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-details">
+                                    <div class="song-name">
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="singer-name">
+                                        <p>feel</p>
+                                    </div>
+                                </div>
+                            </div>
+                                 <!-- Adding icons heart and plus -->
+                            <div class="song-icons-container">
+                                 <a href=""> <i class="far fa-heart"></i></a>
+                                <a href=""><i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+
+            <!-- playlist aside section-->
+            <aside>
+                <section class="aside-section">
+                    <div class="aside-section-title">
+                        <div class="aside-heading">
+                            <h3>Similar Artists</h3>
+                        </div>
+                        <!-- Adding operation -->
+                        <div class="dropdown">
+                            <p>View All</p>
+                            <div class="dropdown-content">
+                                <p>
+                                    <span><i class="fas fa-play"></i></span>
+                                    <span>Play Now</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-plus"></i></span>
+                                    <span>Add To Queue</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-list-ul"></i></span>
+                                    <span>Add To Favourites</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-info-circle"></i></span>
+                                    <span>more Info</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+                             <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+                             <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+
+                            <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+                              <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+
+                            <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <!-- Adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi Band</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                              <!-- Adding song operation -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:27</p>
+                                </div>
+    
+                            </li>
+
+
+
+
+
+
+
+
+                            <li>
+                             <!-- adding song -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\Q.jpeg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>feel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Adding operations -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>3:37</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                 <!-- Adding songs -->
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>Desi band</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- adding operations -->
+                                <div class="song-icons-container">
+                                    <div class="dropdown">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                        <div class="dropdown-content">
+                                            <p>
+                                                <span><i class="fas fa-play"></i></span>
+                                                <span>Play Now</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-plus"></i></span>
+                                                <span>Add To Queue</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-list-ul"></i></span>
+                                                <span>Add To Favourites</span>
+                                            </p>
+                                            <p>
+                                                <span><i class="fas fa-info-circle"></i></span>
+                                                <span>more Info</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>5:07</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+       <!-- recently played section -->
+                <section class="aside-section" style="margin-top: 10px;">
+
+                    <div class="aside-section-title">
+                        <div class="aside-heading">
+                            <h3>Recently Played</h3>
+                        </div>
+                        <!-- Adding operation -->
+                        <div class="dropdown">
+                            <p>View All</p>
+                            <div class="dropdown-content">
+                                <p>
+                                    <span><i class="fas fa-play"></i></span>
+                                    <span>Play Now</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-plus"></i></span>
+                                    <span>Add To Queue</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-list-ul"></i></span>
+                                    <span>Add To Favourites</span>
+                                </p>
+                                <p>
+                                    <span><i class="fas fa-info-circle"></i></span>
+                                    <span>more Info</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- adding songs -->
+                    <div class="song-queue">
+                        <ul class="song-list">
+                            <li>
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\Q.jpeg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>feel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-icons-container">
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                </div>
+                            </li>
+
+                            <li>
+                              <!-- Adding song -->
+                                <div class="song-details-container">
+    
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>feel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-icons-container">
+                                   <a href=""> <i class="far fa-heart"></i></a>
+                                </div>
+                            </li>
+
+                            <li>
+                              <!-- adding songs -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\Q.jpeg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>feel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-icons-container">
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                </div>
+                            </li>
+
+                            <li>
+                              <!-- Adding song -->
+                                <div class="song-details-container">
+                                    <div class="song-image">
+                                        <img src="static\Queue Songs\queue-song4.jpg" alt="song image">
+                                    </div>
+                                    <div class="song-details">
+                                        <div class="song-name">
+                                            <p>Love</p>
+                                        </div>
+                                        <div class="singer-name">
+                                            <p>feel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="song-icons-container">
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <!-- play bar at bottom-->
+        <footer class="playbar" id="bar">
+            <!-- top play bar -->
+            <div class="bar-top-player">
+                <div class="inner-bar"></div>
+            </div>
+            <!-- about song -->
+            <div class="song-details-container">
+                <div class="song-image">
+                    <a href=""><img src="static\Queue Songs\queue-song4.jpg" alt="song image"></a>
+                </div>
+                <div class="song-details">
+                    <div class="song-name">
+                        <p>Love</p>
+                    </div>
+                    <div class="singer-name">
+                        <p>feel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-icons-container">
+               <a href=""> <i class="far fa-heart"></i></a>
+                <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <!-- song control button -->
+            <div class="song-player-controls">
+                <div class="control-buttons">
+                    <ul class="horizontal-control-list">
+                        <li><i class="fas fa-random"></i></li>
+                        <li><i class="fas fa-step-backward"></i></li>
+                        <li>
+                            <div class="play-pause">
+                                <input type="checkbox" value="" id="playPauseCheckbox" name="playPauseCheckbox">
+                                <label for="playPauseCheckbox"></label>
+                            </div>
+                        </li>
+                        <li><i class="fas fa-step-forward"></i></li>
+                        <li><i class="fas fa-redo-alt"></i></li>
+                    </ul>
+                </div>
+                <!-- progress bar -->
+                <div class="progress-bar">
+                    <span>2:30</span>
+                    <div class="outer-bar">
+                        <div class="inner-bar"></div>
+                    </div>
+                    <span>4:30</span>
+                </div>
+            </div>
+
+            <!-- sound(volume) and oter controls -->
+            <div class="volume-bar-controls">
+                <ul class="horizontal-control-list">
+                    <li><i class="fas fa-list-ul"></i></li>
+                    <li><i class="fab fa-bluetooth-b"></i></li>
+                    <li><i class="fas fa-volume-up"></i></li>
+                    <li>
+                        <!-- volume bar for song -->
+                        <div class="progress-bar">
+                            <div class="outer-bar">
+                                <div class="inner-bar"></div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><i class="fas fa-expand-arrows-alt"></i></li>
+                </ul>
+            </div>
+
+        </footer>
+    </body>
+</html>

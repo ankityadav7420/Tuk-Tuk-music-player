@@ -1,0 +1,203 @@
+/* color variables for header, playbar and screen contents */
+:root{
+    /* -- main background color theme-- */
+    --background-color-theme: #0c1028;
+    --secondary-bg-color: #38479e;
+
+    /* --main text color */
+    --primary-text-color: #dddada;
+    --secondary-text-color: #b3b3b3;
+
+    /* notification alert color */
+    --notification-color: rgb(251, 44, 15);
+
+    /* search bar background color */
+    --search-bar-color: #141b43;
+
+    /* list background popup menu color for playlist */
+    --list-item-bg: #1a1e33;
+    --list-hover-bg: #202440;
+    --list-dropdown-color: #202649;
+
+    /* playbar colors */
+    --playbar-bg-color: #282830;
+    --topbar-bg-color: black;
+}
+
+
+/*  variables:- font size,waight,font faimily */
+:root{
+    --main-font-family: sans-serif;
+    --primary-font-size: 1rem;
+    --secondary-font-size: 0.7rem;
+    --primary-line-height: 17px;
+    --thin-font-weight: 100;
+    --thick-font-weight: 700;
+    --font-align: center;
+}
+
+
+/* media queries : Respnsive */
+@media only screen and (max-width: 824px){
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.6rem;
+        --secondary-font-size: 0.5rem;
+    }
+    /* song lists */
+    .artist-details-container{
+        height: 51vh;
+    }
+    .song-icons-container{
+        font-size: var(--secondary-font-size);
+    }
+    .song-details-container .song-image{
+        padding: 0;
+        margin: 0px 2px 0px 0px;
+    }
+    /*  music section */
+    .music-sections .song-icons-container{
+        display: none;
+    }
+    .music-sections .song-name{
+        font-size: var(--primary-font-size);
+    }
+    .release-artist-name{
+        font-size: var(--secondary-font-size);
+    }
+    .station-title{
+        font-size: var(--secondary-font-size);
+    }
+    /* playbar section */
+    .playbar i{
+        font-size: var(--secondary-font-size);
+    }
+    .play-pause label{
+        width: 4px;
+        height: 10px;
+        top: 5px;
+        left: 38%;
+        border-width: 0px 0px 0px 10px;
+    }
+    #playPauseCheckbox:checked ~label{
+        border-width: 4px 0px 4px 10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* top header section */
+    header{
+        justify-content: space-evenly;
+    }
+    .site-logo-container, .search-bar-container{
+        display: none;
+    }
+
+    /* play list screen  */
+    /* main container section */
+
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.61rem;
+        --secondary-font-size: 0.5rem;
+    }
+    /* song list */
+    .artist-image{
+        width: 46%;
+    }
+    .artist-details div{
+        flex-shrink: 2;
+    }
+    .artist-name-container{
+        margin: 4px 0px;
+    }
+    .playBtn-tracks-details button{
+        width: 90%
+    }
+    .artist-details-container{
+        height: auto;
+    }
+    .artist-details{
+        height: 100%;
+        margin: 0px 2px;
+        padding: 4px 0px;
+        justify-content: space-evenly;
+    }
+    /* music station section */
+    .station-title{
+        font-size: var(--primary-font-size);
+    }
+    /* aside section */
+    aside{
+        display: none;
+    }
+
+    /* bottom playbar section */
+    .playbar{
+        height: 42px;
+        padding: 2px 2px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .bar-top-player{
+        display: block;
+        padding: 0px 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .volume-bar-controls, 
+    .playbar .song-icons-container, 
+    .progress-bar,
+    .horizontal-control-list i
+        {
+            display: none;
+            width: 0;
+        }
+    .play-pause{
+        padding: 0;
+        border: 0;
+    }
+    .play-pause label{
+        top: 2px;
+    }
+}
+/*fixing responsive ness for screan max size 320px*/
+@media only screen and (max-width: 320px){
+    .main-content{
+        margin-left: 4px;
+        margin-right: 4px;
+
+        --primary-font-size: 0.8rem;
+        --secondary-font-size: 0.6rem;
+    }
+   /*Artist section*/
+    .artist-details-container{
+        height: auto;
+        width: 100%;
+    }
+    .artist-details{
+        height: 100%;
+    }
+    #artist-name, #artist-followers{
+        font-size: var(--primary-font-size);
+    }
+    /* music station section */
+    .station-title{
+        font-size: var(--secondary-font-size);
+    }
+    /* play bar section */
+    .playBtn-tracks-details{
+        width: 60%
+    }
+    .tracks-album-details{
+        width: 100%;
+        text-align: center;
+    }
+    .play-pause label{
+        top: 2px;
+    }
+}  
