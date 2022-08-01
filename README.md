@@ -6,7 +6,8 @@
 
 # Creator Page View
 
-![Project img 1](https://user-images.githubusercontent.com/54978121/182216055-955d98ea-bf1b-4ea5-87a1-b974a2fb9e01.jpeg)
+![project img 2](https://user-images.githubusercontent.com/54978121/182216876-45da1bed-f173-4a96-bdaa-25bd288c7a11.jpeg)
+
 
 
 ## A frontend design of music player named 'TUK TUK PLAYER'
