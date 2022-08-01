@@ -1,4 +1,12 @@
 # Tuk-Tuk-music-player
+# Front Page View
+![Project img 1](https://user-images.githubusercontent.com/93519855/182214487-47d67105-8561-45dd-be9a-56ffa7dff600.jpeg)
+
+#Creater Page View
+![project img 2](https://user-images.githubusercontent.com/93519855/182214766-f3df6745-ff74-4e13-bcd8-fca54dc2f9e2.jpeg)
+
+
+
 
 ## A frontend design of music player named 'TUK TUK PLAYER'
 # Used Language
