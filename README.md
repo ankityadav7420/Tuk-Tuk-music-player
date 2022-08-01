@@ -1,4 +1,4 @@
-# Tuk-Tuk-music-player
+# Tuk-Tuk Music Player
 
 # Front Page View
 
