@@ -1,9 +1,11 @@
 # Tuk-Tuk-music-player
 
-#Front Page View
+# Front Page View
+
 ![Project img 1](https://user-images.githubusercontent.com/54978121/182215817-b82e90b2-f2d1-4593-9d52-fb98069f6267.jpeg)
 
-#Creator Page View
+# Creator Page View
+
 ![Project img 1](https://user-images.githubusercontent.com/54978121/182216055-955d98ea-bf1b-4ea5-87a1-b974a2fb9e01.jpeg)
 
 
